@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 8</title>
+    <style>
+      html {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        font-family: calibri;
+        font-weight: bold;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      #menu {
+        display: flex;
+        flex: 1 70px;
+        width: 100vw;
+        align-items: center;
+        border-bottom: 1px solid #aaa;
+        box-sizing: border-box;
+        justify-content: space-between;
+      }
+
+      #corpo {
+        flex: 100;
+        width: 100vw;
+        background-color: #444;
+        display: flex;
+        border-color: #fff;
+      }
+
+      #elemento-amarelo {
+        background-color: yellow;
+        width: 200px; /* Largura de 200px para o elemento amarelo */
+      }
+
+
+
+
+
+
+
+      #rodape {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        height: 80px;
+        border-top: 1px solid #aaa;
+        box-sizing: border-box;
+        justify-content: space-around;
+      }
+
+      #avatar {
+        display: flex;
+        align-items: center;
+      }
+      #titulo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        height: 70px;
+      }
+
+      #form-container {
+        flex: 1; /* Ocupa todo o espaço restante */
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        background-color: #444; /* Fundo escuro */
+        padding: 20px; /* Espaçamento interno */
+      }
+
+      form {
+        width: 100%;
+        max-width: 400px; /* Define a largura máxima do formulário */
+      }
+
+      fieldset {
+        border: none;
+        padding: 20px;
+        margin: 1px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #fff;
+        color: #fff;
+        font-weight: normal; /* Defina o peso da fonte como normal para remover o negrito */
+        border-radius: 10px; /* Arredonda os cantos do fieldset */
+      }
+
+      legend {
+        font-weight: normal;
+      }
+
+      label,
+      input,
+      .botao {
+        width: 100%;
+        box-sizing: border-box;
+        color: white;
+        border-radius: 5px; /* Arredonda os cantos dos botões e labels */
+      }
+
+      .botao-container {
+        display: flex;
+        justify-content: flex-end; /* Alinha os botões à direita */
+        gap: 10px; /* Espaçamento entre os botões */
+      }
+
+      .botao {
+        background-color: #1e90ff;
+        color: #fff;
+        border: none;
+        padding: 5px 10px; /* Reduz o padding pela metade para diminuir o tamanho */
+        border-radius: 5px;
+        border-color: #444;
+        cursor: pointer;
+        width: auto; /* Define a largura automática, adequando-se ao conteúdo */
+        font-size: 14px; /* Define o tamanho da fonte para um valor adequado */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="menu">
+      <div id="titulo">
+        <img src="./imagens/css.png" alt="" width="60" height="60" />
+        <div><h1>CSS3</h1></div>
+      </div>
+      <div id="avatar">
+        <div>Bill Gates</div>
+        <img src="./imagens/avatar.jpg" alt="" width="42" height="42" />
+      </div>
+    </div>
+    <div id="corpo">
+      <div id="elemento-amarelo"></div>
+      <div id="form-container">
+        <form>
+          <fieldset>
+            <legend>Login</legend>
+            <div>
+              <label for="mail">E-mail</label>
+              <input type="email" id="mail" name="mail" />
+            </div>
+            <div>
+              <label for="senha">Senha</label>
+              <input type="password" id="senha" name="senha" />
+            </div>
+            <br><div class="botao-container">
+              <input type="submit" value="Enviar" class="botao" />
+              <input type="reset" value="Limpar" class="botao" />
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div id="rodape">
+      <img src="./imagens/Fatec.png" alt="" width="87" height="41" />
+      <img src="./imagens/CPS.png" alt="" width="85" height="56" />
+      <img src="./imagens/Brasao.png" alt="" width="81" height="54" />
+    </div>
+  </body>
+</html>
